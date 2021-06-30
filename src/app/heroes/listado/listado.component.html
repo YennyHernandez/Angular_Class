@@ -1,11 +1,16 @@
 <h1>Listado Heroes</h1>
-<div>
+<div *ngIf="Heroeborrado !== ''">
+    <!--puede ser solo Heroeborrado porque el sabe cuando esta vacio no muestra -->
     <h3>herore borrado: </h3>
     <span>{{Heroeborrado}}</span>
 </div>
-<button (click)="borrar()">borrar heroe</button>
+<div *ngIf="Heroeborrado == ''">
+    <!--puede ser solo !heroeborrado -->
+    <h3> no ha borrado nada</h3>
+</div>
+<button (click)=" borrar() ">borrar heroe</button>
 <ul>
-    <li *ngFor="let heroe of heroes , let i = index">
+    <li *ngFor="let heroe of heroes , let i=index ">
         {{i}} - {{heroe}}
     </li>
 </ul>

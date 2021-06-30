@@ -7,10 +7,12 @@ import { Component } from '@angular/core';
 export class ListadoComponent  {
 heroes:string[] = ['Spiderman','Hulk','Ironman'] //propiedades de la clase no variables
 Heroeborrado: string = ""
+condition: boolean = false
 
 borrar(){
 const heroeborrado =  this.heroes.shift() || '';
 this.Heroeborrado = heroeborrado;
+this.condition = true;
 }
 
 }

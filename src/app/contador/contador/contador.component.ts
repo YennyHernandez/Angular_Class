@@ -4,7 +4,7 @@ import { Component } from '@angular/core';  //importar el decorador
   selector: 'app-contador', //asi se llamo el selector <></>  del componente
   template: `
 
-  <h1>{{title}}</h1>  //aqui no use un contador.html porque no use el template url
+  <h1>{{title}}</h1>  <!-- aqui no use un contador.html porque no use el template url -->
   <span>{{numero}}</span>
   <button (click)="sumar()">+1</button>
   <button (click)="restar()">-1</button>
