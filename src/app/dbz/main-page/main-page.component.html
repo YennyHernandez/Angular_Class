@@ -2,13 +2,15 @@
 
 <div class="row">
     <div clas="col">
+        <app-personajes [personajes]="personajes "></app-personajes>
+        <!-- se creo un componente con esto mejor, pasandole el arreglo personajes
         <h3>Personajes</h3>
         <hr>
         <ul>
             <li *ngFor="let personaje of personajes ; let i = index">
                 {{i}}= {{personaje.nombre}} - {{personaje.poder |number}} </li>
-            <!-- el pipe number grafica lo que hay en poder como un numero con decimales, comas, puntos...  -->
-        </ul>
+             el pipe number grafica lo que hay en poder como un numero con decimales, comas, puntos...
+        </ul> -->
 
     </div>
     <div clas="col">
