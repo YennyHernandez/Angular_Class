@@ -19,25 +19,10 @@ export class MainPageComponent  {
   }
 ]
 
-  nuevo: personaje = {  //objeto definido que cambia con un input
-    nombre:'',
-    poder: 0
-  }
+nuevo: personaje = {  //objeto definido que cambia con un input
+  nombre:'Por defecto',
+  poder: 0
+}
 
-  //cambiarnombre( event: any){
-   // console.log(event.target.value)}
-
-  agregar(){
-    if(this.nuevo.nombre.trim().length == 0){
-      return;
-    }
-    console.log(this.nuevo, this.personajes)
-    this.personajes.push(this.nuevo); //inserto nuevo personaje al objeto
-    this.nuevo= { //se vuelve a dejar en blanco para escribir de nuevo
-      nombre: '',
-      poder:0
-    }
-
-  }
 
 }
