@@ -2,7 +2,7 @@
 
 <div class="row">
     <div clas="col">
-        <app-personajes [personajes]="personajes "></app-personajes>
+        <app-personajes></app-personajes>
         <!-- se creo un componente con esto mejor, pasandole el arreglo personajes
         <h3>Personajes</h3>
         <hr>
@@ -14,7 +14,7 @@
 
     </div>
     <div clas="col">
-        <app-agregar (onNuevopersonaje)="agregarpersonajealista( $event )"></app-agregar>
+        <app-agregar [nuevo]="nuevo"></app-agregar>
     </div>
 
 </div>
