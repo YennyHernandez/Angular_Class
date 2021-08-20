@@ -11,7 +11,7 @@ import { DBZservice } from '../services/dbz.service';
 })
 export class PersonajesComponent {
 // @Input() personajes:personaje[] = [];
-get personajes(){
+get personajes(){   //obtiene la informacion del servicio 
     return this.dbzservice.personajes;
   }
 

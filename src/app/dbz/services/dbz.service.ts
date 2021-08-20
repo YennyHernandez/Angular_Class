@@ -14,12 +14,17 @@ export class DBZservice{
   ]
 
   get personajes():personaje[]{
-    return[...this._personajes];
+    return[...this._personajes];  //los [...]son buena practica, _ para definir privacidad
   }
- 
+
 
   constructor(){
     console.log("servicio inicializado")
   }
+
+  agregarpersonaje( personaje: personaje){
+    this._personajes.push(personaje);
+  }
+
 }
 
